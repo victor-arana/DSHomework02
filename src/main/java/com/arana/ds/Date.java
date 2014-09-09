@@ -1,8 +1,6 @@
 package com.arana.ds;
 /* Date.java */
 
-import java.io.*;
-
 class Date {
 
   /* Put your private data fields here. */
@@ -71,7 +69,7 @@ class Date {
 			days = 31;
 			break;
 	}
-	return days;		// replace this line with your solution
+	return days;		
   }
 
   /** Checks whether the given date is valid.
@@ -80,7 +78,7 @@ class Date {
    *  Years prior to A.D. 1 are NOT valid.
    */
   public static boolean isValidDate(int month, int day, int year) {
-  	return daysInMonth(month, year) >= day;                        // replace this line with your solution
+  	return daysInMonth(month, year) >= day;                       
   }
 
   /** Returns a string representation of this date in the form month/day/year.
@@ -91,7 +89,7 @@ class Date {
   public String toString() {
   	String texto;
   	texto = new String(month + "/" + day + "/" +year);
-    return texto;                     // replace this line with your solution
+    return texto;                     
   }
 
   /** Determines whether this Date is before the Date d.
